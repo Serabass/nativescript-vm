@@ -50,6 +50,8 @@ Vagrant.configure(2) do |config|
   # Example for VirtualBox:
   #
   
+  config.vm.synced_folder '.', '/home/vagrant/signed', type: "virtualbox"
+  
   config.vm.provider "virtualbox" do |vb|
      vb.name = "NativeScript VM"
      vb.customize ["modifyvm", :id, "--usb", "on"]
