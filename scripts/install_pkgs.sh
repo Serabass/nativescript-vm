@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 
 # Use Gradle ppa to get latest gradle
 echo 'deb http://ppa.launchpad.net/cwchien/gradle/ubuntu trusty main' | sudo tee /etc/apt/sources.list.d/gradle.list
